@@ -10,4 +10,4 @@ npx tailwindcss init -p
 yarn dev
 ```
 
-[Demo](https://github.com/hanifrodili/assessment-hanifrodili)
+[Demo](https://project-button.vercel.app/)
