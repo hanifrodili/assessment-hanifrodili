@@ -1,7 +1,7 @@
 <template>
   <button class="button button-custom bg-gradient" :class="`shape-${shape} size-${size}`" :style="{ backgroundColor: color }" :disabled="disabled" :loading="loading">
-    <slot v-if="!loading || disabled"></slot>
-    <div v-if="loading && !disabled">
+    <slot v-if="!loading"></slot>
+    <div v-else>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-[40px] animate-spin"><title>loading</title><path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z" /></svg>
     </div>
   </button>
